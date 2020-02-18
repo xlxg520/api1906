@@ -21,6 +21,9 @@ Route::prefix('/test')->group(function (){
    Route::get('/wx/token','TextController@getAccessToken');
    Route::get('/wx/curl','TextController@curl');
    Route::get('/wx/guzzle','TextController@guzzle');
+   Route::get('/get1','TextController@get1');
+   Route::get('/goods ','GoodsController@goods');
+
    //
 });
 
