@@ -137,8 +137,29 @@ class TextController extends Controller
            $str .= chr($code);
        }
        echo "解密后数据:".$str;
-
    }
+
+
+     public function encrypt1()
+     {
+      /*   $method_arr = openssl_get_cipher_methods();
+         echo "<pre>";print_r($method_arr);echo "</pre>";
+         die;*/
+
+         $key = '1906';
+         $data = "dasdasd";
+         $emthod   = "aes-128-cbc";
+         $iv = "qwertyuioplkjhgf";
+         $enc_str  =  openssl_encrypt($data,$emthod,$key,OPENSSL_RAW_DATA,$iv);
+         var_dump($enc_str);
+
+
+         echo "<hr>";
+         //解密
+         $dec_data = openssl_decrypt($enc_str,$emthod,$key,OPENSSL_RAW_DATA,$iv);
+         var_dump($dec_data);
+
+     }
 
 
 }

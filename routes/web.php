@@ -28,6 +28,7 @@ Route::prefix('/test')->group(function (){
    Route::get('/lucky ','TextController@lucky');
    Route::get('/encrypt ','TextController@encrypt');
    Route::get('/decrypt ','TextController@decrypt');
+   Route::get('/encrypt1 ','TextController@encrypt1');
 
 
    //
