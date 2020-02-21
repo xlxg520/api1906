@@ -23,6 +23,12 @@ Route::prefix('/test')->group(function (){
    Route::get('/wx/guzzle','TextController@guzzle');
    Route::get('/get1','TextController@get1');
    Route::get('/goods ','GoodsController@goods');
+   Route::get('/count ','TextController@count');
+   Route::get('/md5test ','TextController@md5test');
+   Route::get('/lucky ','TextController@lucky');
+   Route::get('/encrypt ','TextController@encrypt');
+   Route::get('/decrypt ','TextController@decrypt');
+
 
    //
 });
