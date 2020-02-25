@@ -162,4 +162,14 @@ class TextController extends Controller
      }
 
 
+     //非对称加密
+     public   function rsa1()
+     {
+         $data = "hello world ";
+         echo $data;
+     }
+
+
+
+
 }

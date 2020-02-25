@@ -29,11 +29,13 @@ Route::prefix('/test')->group(function (){
    Route::get('/encrypt ','TextController@encrypt');
    Route::get('/decrypt ','TextController@decrypt');
    Route::get('/encrypt1 ','TextController@encrypt1');
-
+   Route::get('/rsa1 ','TextController@rsa1');
 
    //
 });
 
+
+Route::get('/alipay ','AlipayController@alipay');
 
 
 
