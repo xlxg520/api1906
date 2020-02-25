@@ -18,8 +18,8 @@ class AlipayController extends Controller
 
             'out_trade_no'  =>   'test_1906'.time().'_'.mt_rand(11111,99999),
             'praduct_code'  =>   'FAST_INSTANT_TRADE_PAY',
-            'total_amount'  =>   '100000000',
-            'subject'       =>   '北京壹号庄园'. mt_rand(11111,99999),
+            'total_amount'  =>   '1000',
+            'subject'       =>   '测试'. mt_rand(11111,99999),
         ];
 
         $pub_param = [      //公共请求参数
